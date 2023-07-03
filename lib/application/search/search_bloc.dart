@@ -18,6 +18,7 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
   SearchBloc(this.downloadsService, this.searchService)
       : super(SearchState.Initial()) {
 //idle state  //////////////////////////////////
+
     on<Initialize>((event, emit) async {
       if (state.idleList.isNotEmpty) {
         emit(state);
@@ -30,6 +31,7 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
             isLoading: true,
             isError: false),
       );
+
       //get trending
 
       final result = await downloadsService.getdownloadsImage();
@@ -48,6 +50,7 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
       });
 
       //show to ui
+
       emit(_state);
     });
 
@@ -55,6 +58,7 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
 
     on<SearchMovie>((event, emit) async {
       //call search movie api
+
       emit(
         const SearchState(
             searchResultList: [],
@@ -81,7 +85,9 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
           );
         },
       );
+
       //show to ui
+
       emit(_state);
     });
   }

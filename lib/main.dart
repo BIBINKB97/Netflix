@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix/application/downloads/downloads_bloc.dart';
 import 'package:netflix/application/fast_laugh/fast_laugh_bloc.dart';
-
 import 'package:netflix/application/search/search_bloc.dart';
 import 'package:netflix/core/colors.dart';
 import 'package:netflix/domain/core/di/injectable.dart';
@@ -25,7 +24,7 @@ Future<void> main() async {
   getHomeImage();
   getHomerelesethePastYear();
   getHomeTrendingNow();
-  getHomeTendeAndDrama();
+  getHomeTenseAndDrama();
   getHomeSouthIndian();
   getHomeTop10showindia();
   runApp(const MyApp());
@@ -49,13 +48,9 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
           ),
           primarySwatch: Colors.blue,
-          backgroundColor: Colors.black,
           scaffoldBackgroundColor: backgroundColor,
           fontFamily: GoogleFonts.montserrat().fontFamily,
-          textTheme: const TextTheme(
-            bodyText1: TextStyle(color: Colors.white),
-            bodyText2: TextStyle(color: Colors.white),
-          ),
+          textTheme: const TextTheme(),
         ),
         home: ScreenMainPage(),
       ),

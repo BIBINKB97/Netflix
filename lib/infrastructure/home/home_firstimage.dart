@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:netflix/domain/core/api_end_point.dart';
 import 'package:netflix/domain/home/models/home_main_model.dart';
 
-
 ValueNotifier<List<ScrollImageHome>> homefirstimage = ValueNotifier([]);
 getHomeImage() async {
   try {

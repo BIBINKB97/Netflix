@@ -6,7 +6,7 @@ import 'package:netflix/domain/core/api_end_point.dart';
 import 'package:netflix/domain/home/models/home_main_model.dart';
 
 ValueNotifier<List<ScrollImageHome>> tendeAndDrama = ValueNotifier([]);
-getHomeTendeAndDrama() async {
+getHomeTenseAndDrama() async {
   try {
     Response response = await Dio(BaseOptions()).get(ApiEndPoints.tensedrrama);
     if (response.statusCode == 200 || response.statusCode == 201) {
