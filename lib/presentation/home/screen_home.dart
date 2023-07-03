@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:netflix/core/colors.dart';
@@ -172,18 +173,27 @@ class ScreenHome extends StatelessWidget {
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
-                                      children: [
+                                      children: const [
                                         Text(
                                           "TV Shows",
-                                          style: khomeTitleText,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold),
                                         ),
                                         Text(
                                           "Movies",
-                                          style: khomeTitleText,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold),
                                         ),
                                         Text(
                                           "Categories",
-                                          style: khomeTitleText,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold),
                                         ),
                                       ],
                                     )

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/core/colors.dart';
 
-
 class CustomButtomWidget extends StatelessWidget {
   const CustomButtomWidget({
     Key? key,

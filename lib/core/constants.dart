@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/core/colors.dart';
 
 const kwidth = SizedBox(
   width: 10,
@@ -22,8 +23,8 @@ const kMainimage =
     "https://www.themoviedb.org/t/p/w220_and_h330_face/4FAA18ZIja70d1Tu5hr5cj2q1sB.jpg";
 
 // Textstyle
-TextStyle khomeTitleText =
-    const TextStyle(fontSize: 14, fontWeight: FontWeight.bold);
+TextStyle khomeTitleText = const TextStyle(
+    fontSize: 14, fontWeight: FontWeight.bold, color: kwhitecolor);
 
 const newAndHotTempImage =
     "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/3ib0uov9Qq9JtTIEGL39irTa3vZ.jpg";

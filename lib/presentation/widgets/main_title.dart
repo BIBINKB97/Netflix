@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter/src/widgets/framework.dart';
-// import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:netflix/core/colors.dart';
 
 class MainTitle extends StatelessWidget {
   const MainTitle({super.key, required this.title});
@@ -11,9 +10,7 @@ class MainTitle extends StatelessWidget {
     return Text(
       title,
       style: const TextStyle(
-        fontSize: 22,
-        fontWeight: FontWeight.bold,
-      ),
+          fontSize: 22, fontWeight: FontWeight.bold, color: kwhitecolor),
     );
   }
 }

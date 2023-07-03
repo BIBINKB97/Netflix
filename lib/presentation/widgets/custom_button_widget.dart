@@ -24,7 +24,10 @@ class CustomButtonWidget extends StatelessWidget {
         ),
         Text(
           title,
-          style: TextStyle(fontSize: textSize, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              fontSize: textSize,
+              fontWeight: FontWeight.bold,
+              color: Colors.white),
         ),
       ],
     );

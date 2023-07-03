@@ -55,10 +55,10 @@ class BackgroundCard extends StatelessWidget {
         color: kblackcolor,
       ),
       label: const Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: EdgeInsets.symmetric(horizontal: 10),
         child: Text(
           'Play',
-          style: TextStyle(fontSize: 18, color: kblackcolor),
+          style: TextStyle(fontSize: 18, color: kwhitecolor),
         ),
       ),
     );

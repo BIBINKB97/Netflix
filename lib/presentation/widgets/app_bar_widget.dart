@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:netflix/core/constants.dart';
 
 class AppBarWidget extends StatelessWidget {
@@ -12,7 +13,8 @@ class AppBarWidget extends StatelessWidget {
         kwidth,
         Text(
           title,
-          style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w900),
+          style: TextStyle(
+              fontSize: 30, fontWeight: FontWeight.w900, color: Colors.white),
         ),
         const Spacer(),
         const Icon(
@@ -21,7 +23,7 @@ class AppBarWidget extends StatelessWidget {
           size: 30,
         ),
         kwidth,
-        Container(width: 30, height: 30, color: Colors.blue),
+        SizedBox(width: 30, height: 30),
         kwidth,
       ],
     );

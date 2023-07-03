@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:netflix/application/downloads/downloads_bloc.dart';
@@ -18,7 +17,6 @@ class ScreeDownloads extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final Size size = MediaQuery.of(context).size;
     return Scaffold(
         appBar: const PreferredSize(
           preferredSize: Size.fromHeight(50),
@@ -140,7 +138,7 @@ class Section3 extends StatelessWidget {
               child: Text(
                 "See what you can download",
                 style: TextStyle(
-                    color: kblackcolor,
+                    color: Colors.black,
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
               ),
@@ -167,7 +165,11 @@ class _SmartDownloads extends StatelessWidget {
           color: Colors.white,
         ),
         kwidth,
-        Text('Smart Downloads'),
+        Text(
+          'Smart Downloads',
+          style: TextStyle(
+              color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+        ),
       ],
     );
   }
